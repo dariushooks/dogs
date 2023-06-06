@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Dogs</string>
+    <string name="nav_breeds">Breeds</string>
+    <string name="nav_favorites">Favorites</string>
+    <string name="add_favorite">ADD TO FAVORITES</string>
+    <string name="remove_favorite">REMOVE FROM FAVORITES</string>
+    <string name="favorites">Favorites</string>
+</resources>

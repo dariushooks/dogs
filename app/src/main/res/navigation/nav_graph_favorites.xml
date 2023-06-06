@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_favorites"
+    app:startDestination="@id/fragment_favorites">
+
+    <fragment
+        android:id="@+id/fragment_favorites"
+        android:name="dariushooks.android.dogs.ui.favorites.FavoritesFragment"
+        android:label="Favorites"
+        tools:layout="@layout/fragment_favorites">
+        <action
+            android:id="@+id/action_fragment_favorites_to_fragment_breeds_detail"
+            app:destination="@id/fragment_breeds_detail"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragment_breeds_detail"
+        android:name="dariushooks.android.dogs.ui.breeds.BreedsDetailFragment"
+        android:label="Detail"
+        tools:layout="@layout/fragment_breeds_detail">
+        <argument
+            android:name="breed"
+            app:argType="dariushooks.android.dogs.Breed"/>
+    </fragment>
+
+</navigation>
